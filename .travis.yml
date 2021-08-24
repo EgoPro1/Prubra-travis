@@ -1,6 +1,8 @@
 languaje: java
 jdk:
   - openjdk8
-script: "./mvn clean install"
+script: "./mvnw clean install"
 notifications:
   email: aloegocheaga@hotmail.com
+before_install:
+  - chmod +x mvnx
